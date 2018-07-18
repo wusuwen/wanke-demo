@@ -1,7 +1,7 @@
 .header{
     left: 0px;
     top: 0px;
-    width: 1400px;
+    width: 100%;
     height: 60px;
     background-color: rgba(27, 179, 147, 1);
 }
@@ -43,21 +43,20 @@
 }
 .left{
     left: 0px;
-    top: 60px;
+    /* top: 60px; */
     width: 200px;
     height: 1288px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
-
 }
-.block{
+.user-picter{
     left: 0px;
     top: 60px;
     width: 200px;
     height: 200px;
     background-color: rgba(244, 244, 244, 1);
 }
-.block img{
+.user-picter img{
     position: absolute;
     left: 67px;
     top: 84px;
@@ -112,10 +111,9 @@ ul{
     padding-left:0px;
 }
 
-ul li{
+/* .left-body li{
    width: 200px;
    height: 56px;
-   /* text-align: center; */
    padding-left:15px;
    padding-top:25px;
    color: rgba(102, 102, 102, 1);
@@ -123,30 +121,58 @@ ul li{
     font-family: MicrosoftYaHei;
 }
 ul li glyphicon{
-    left: 16px;
+    margin-right: 5px;
+   padding-left: 16px;
     width: 20px;
     height: 17.7px;
     background-color: rgba(204, 204, 204, 1);
-
 } 
-ul li:hover{
-    background:rgba(27, 179, 147, 1);
-    cursor: pointer;
-    /* width: 180px;
-    height: 45px; */
+ul li a{
+    margin-left: 10px;
+    font-size:14px;
+    color: #333;
+} */
+/* span glyphicon{
+    margin-right: 5px;
+    padding-left: 16px;
+    height: 17.7px;
+    background-color: rgba(204, 204, 204, 1);
+    margin-top: 20px;
 }
-.main-top{
+.nav .nav-pills li{
+    width: 200px;
+}
+.nav glyphicon a{
+    margin-top: -30px;
+} */
+.left-nav li a{
+    font-size: 14px;
+    margin-left: 5px;
+
+}
+.left-nav li i{
+    margin-right: 10px;
+}
+.left-nav li{
+    height: 56px;
+}
+.left-nav li:hover{
+    background-color: #1ab393;
+}
+.left-nav li a:hover{
+    background-color: #1ab393;
+}
+.breadcrumb{
     position: absolute;
-    left: 200px;
+    left: 230px;
     top: 60px;
     width: 1200px;
     height: 48px;
-    background-color: rgba(255, 255, 255, 1); 
+    background-color: rgba(255, 255, 255, 1);
 }
-.main-left-top label{
-    position: absolute;
-    left: 55px;
-    top: 10px;
+.breadcrumb-return{
+    margin-left:15px;
+    top: 72px;
     width: 56px;
     height: 24px;
     line-height: 24px;
@@ -155,18 +181,9 @@ ul li:hover{
     text-align: left;
     font-family: MicrosoftYaHei;
 }
-.main-left-top img{
-    position: absolute;
-    left: 20px;
-    top: 6px;
-    width: 35px;
-    height: 35px;
-    background-color: rgba(27, 179, 147, 1);
-}
-.main-right-top label{
-    position: absolute;
-    left: 166px;
-    top: 10px;
+.breadcrumb-manger{
+    margin-left:66px;
+    top: 72px;
     width: 78px;
     height: 24px;
     line-height: 24px;
@@ -175,9 +192,106 @@ ul li:hover{
     text-align: left;
     font-family: MicrosoftYaHei-Bold;
 }
-.main-right-top label:hover{
-    cursor: pointer;
+.breadcrumb img{
+    left: 150px;
+    top: 77.17px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(27, 179, 147, 1);
 }
-.main-left-top img:hover{
+.breadcrumb img:hover{
     cursor: pointer;
+
+}
+.breadcrumb-manger:hover{
+   text-decoration: none;
+   color:  rgba(27, 179, 147, 1);
+}
+.breadcrumb-return:hover{
+   text-decoration: none;
+   color:  rgba(27, 179, 147, 1);
+}
+
+
+/*第二部分*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.mian-body{
+    border-top: solid rgba(28, 179, 148, 1) 4px;
+    top: 124px;
+    left: 216px;
+    position: absolute;
+    
+}
+.nav{
+    margin-top: 10px;
+}
+.nav-tabs{
+    border-bottom: 1px solid #1ab393;
+    margin: 15px 0px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	color: #1bb393;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #1ab393;
+    border-bottom-color: transparent;
+    /* height: 30px; */
+    
+}
+.nav li a{ 
+    color:#333
+}
+.navbar{
+    background-color: rgba(222, 229, 236, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+    margin-top: 15px;
+
+}
+.container-fluid a{
+    font-size: 14px;
+}
+.banner{
+    text-align: center;
+    width: 130px;
+    display: inline-block;
+    border-bottom: solid rgba(28, 179, 148, 1) 4px;
+    left: 30;
+    position: absolute;
+    height: 48px;
+}
+.img1{
+    left: 260px;
+    position: absolute;
+}
+
+.col-sm-6{
+    padding: 20px 20px 20px 20px;
+    width: 360px;
+}
+ .thumbnail{
+     padding: 20px 20px 20px 20px;
+ }
+.caption input{
+    outline: none;
+    border: none;
+}
+.btn-banner{
+    border: none;
+    background-color: rgba(28, 179, 148, 1);
+    color: white;
+    width: 114px;
+    height: 36px;
+    border-radius: 4px;
+    right: 40px;
+    bottom: 60px;
+    position: absolute;
+
+}
+.icon{
+    right: 40px;
+    position: absolute;
 }
